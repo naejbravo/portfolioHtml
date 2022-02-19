@@ -905,6 +905,11 @@ input[type="checkbox"], input[type="radio"] {
 
 * {
   scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+a {
+  color: #ffffffc0;
 }
 
 body {
