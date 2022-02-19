@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+//utilities
+@import "./utilities/colors";
+@import "./utilities/responsive";
+
+//block - layouts
+//@import "./block/grid";
+@import "./block/nav";
+@import "./block/sections";
+
+//base
+@import "./base/typo";
+@import "./base/reset";
+@import "./base/normalize";
+
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    background-image: url(../assets/img/pngwing.com.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+}

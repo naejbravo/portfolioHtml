@@ -1,0 +1,67 @@
+nav {
+  background-color: $black-secondary;
+
+  position: sticky;
+  top: 0;
+  color: $white-primary;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 10vh;
+  flex-wrap: wrap;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 200px;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+  }
+
+  .nav-item {
+    /*@include mobile{
+
+    }
+    @include tablet{
+  
+    }
+    @include  desktop{
+      margin: 2px;
+    }*/
+    a {
+      text-decoration: none;
+      color: $white-primary;
+      cursor: pointer;
+      &:hover {
+        font-style: italic;
+      }
+    }
+  }
+}
